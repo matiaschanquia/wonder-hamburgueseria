@@ -114,6 +114,29 @@ body {
     position: relative;
 }
 
+.container-text-inicio {
+    text-transform: uppercase;
+    font-family: "Olivie", sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 40px;
+    width: 70%;
+}
+
+.container-text-inicio > h1 {
+    font-size: 50px;
+    color: var(--amarillo);
+    text-shadow: 2px 2px 0px black;
+    letter-spacing: 2px;
+}
+
+.container-text-inicio > h3 {
+    color: #fff;
+    text-shadow: 1px 1px 0px var(--amarillo),
+                 2px 2px 0px #000;
+    letter-spacing: 1px;
+}
+
 .bi-arrow-down {
     cursor: pointer;
     position: absolute;
