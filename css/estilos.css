@@ -140,7 +140,7 @@ body {
     cursor: pointer;
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 46%;
     font-size: 50px;
     color: var(--amarillo);
     transition: all .2s ease-in-out;
@@ -164,7 +164,8 @@ body {
 
 .titulo1 {
     font-size: 30px;
-
+    font-family: "Olivie";
+    text-transform: uppercase;
 }
 
 .container-section > p {
@@ -172,7 +173,7 @@ body {
     font-size: 20px;
 }
 
-.fotos-section1 {
+.fotos-section {
     margin: 20px 0;
     display: flex;
     align-items: center;
@@ -181,7 +182,7 @@ body {
     flex-wrap: wrap;
 }
 
-.fotos-section1 > img {
+.fotos-section > img {
     width: 280px;
     border-radius: 20px;
 }
@@ -195,6 +196,32 @@ body {
 
 .cosas-nuevas-section1 > li {
     padding: 10px;
+}
+
+.section2 {
+    background-color: #fff;
+}
+
+.container-section2 {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container-section2 > h3 {
+    color: var(--amarillo);
+}
+
+.container-section2 > p {
+    color: #000;
+}
+
+.precio {
+    text-transform: uppercase;
+    font-family: "Olivie";
+    font-size: 24px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: var(--anaranjado);
 }
 
 @media (max-width: 1200px) {
@@ -215,5 +242,20 @@ body {
     }
     .container-text-inicio > h1 {
         font-size: 40px;
+    }
+    .container-text-inicio > h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container-text-inicio > h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+    .fotos-section1 > img {
+        width: 95%;
     }
 }
