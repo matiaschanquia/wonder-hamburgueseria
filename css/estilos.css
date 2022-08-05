@@ -45,11 +45,6 @@ body {
     display: none;
 }
 
-
-.main {
-    z-index: -2;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -60,6 +55,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    z-index: 1;
 }
 
 .container-logo {
@@ -88,6 +84,7 @@ body {
     color: var(--amarillo);
     padding: 15px 5px;
     font-weight: 500;
+    transition: all .2s ease-in-out;
 }
 
 .ul-menu a:hover {
@@ -115,7 +112,6 @@ body {
     background: #000 url(../img/hamburguesa-inicio2.jpg) no-repeat scroll center;
     background-size: cover;
     position: relative;
-    z-index: -1;
 }
 
 .bi-arrow-down {
@@ -126,7 +122,6 @@ body {
     font-size: 50px;
     color: var(--amarillo);
     transition: all .2s ease-in-out;
-    z-index: 2;
 }
 
 .bi-arrow-down:hover {
