@@ -283,6 +283,18 @@ hr {
     height: 100vh;
     background: rgb(255,211,0);
     background: linear-gradient(45deg, rgba(255,211,0,1) 0%, rgba(230,162,3,1) 50%, rgba(255,211,0,1) 100%);
+    animation-name: movimiento;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .ul-menu-deslizable {
