@@ -150,3 +150,45 @@ body {
 .bi-arrow-down:hover {
     transform: translateY(10px);
 }
+
+.container-section {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.container-section1 {
+    padding: 60px 0;
+    font-family: "Olivie";
+    text-align: center;
+}
+
+.titulo1 {
+    font-size: 30px;
+
+}
+
+.container-section > p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.fotos-section1 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotos-section1 > img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+    .container-section {
+        width: 97%;
+    }
+}
