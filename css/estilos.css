@@ -1,0 +1,134 @@
+/* Fuentes de letra */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+    font-family: "Altair";
+    src: url("../font/altair-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Olivie";
+    src: url("../font/OlivieSans-Regular.ttf") format("truetype");
+}
+
+/* Reseteo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --amarillo: #FFD300;
+    --anaranjado: #E6A203;
+}
+
+/* Empiezo de codigo */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255,211,0);
+    background: linear-gradient(45deg, rgba(255,211,0,1) 0%, rgba(230,162,3,1) 50%, rgba(255,211,0,1) 100%);
+}
+
+.display-none {
+    display: none;
+}
+
+
+.main {
+    z-index: -2;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo > img {
+    width: 80px;
+}
+
+.container-logo > h1 {
+    text-transform: uppercase;
+    color: var(--amarillo);
+    font-family: "Altair", sans-serif;
+}
+
+
+.ul-menu {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+}
+
+.ul-menu a {
+    color: var(--amarillo);
+    padding: 15px 5px;
+    font-weight: 500;
+}
+
+.ul-menu a:hover {
+    color: #000;
+    background: rgb(255,211,0);
+    background: linear-gradient(180deg, rgba(255,211,0,1) 0%, rgba(230,162,3,1) 100%);
+}
+
+.boton-menu-abrir {
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.boton-menu-abrir > span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--amarillo);
+}
+
+.section-inicio {
+    height: 100vh;
+    background: #000 url(../img/hamburguesa-inicio2.jpg) no-repeat scroll center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.bi-arrow-down {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 50px;
+    color: var(--amarillo);
+    transition: all .2s ease-in-out;
+    z-index: 2;
+}
+
+.bi-arrow-down:hover {
+    transform: translateY(10px);
+}
