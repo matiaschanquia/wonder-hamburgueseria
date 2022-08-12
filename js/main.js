@@ -6,6 +6,7 @@ const itemsMenu = document.querySelectorAll(".item-menu");
 const nav = document.getElementById("nav-flotante");
 
 
+
 botonAbrir.addEventListener("click", function() {
     nav.classList.remove("display-none")
 });
