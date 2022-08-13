@@ -439,7 +439,7 @@ hr {
     text-align: center;
     text-transform: uppercase;
     font-family: "Olivie";
-    color: var(--amarillo);
+    color: #fff;
     text-shadow: 2px 2px 0px black;
     margin-bottom: 10px;
 }
