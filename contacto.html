@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/main.js" defer></script>
-    <title>Wonder Hamburgueseria | Nosotros</title>
+    <title>Wonder Hamburgueseria | Contacto</title>
 </head>
 <body>
     <nav id="nav-flotante" class="nav-deslizable display-none">
@@ -20,8 +20,8 @@
             <li><a class="item-menu" href="index.html">Inicio</a></li>
             <li><a class="item-menu" href="galeria.html">Galería</a></li>
             <li><a class="item-menu" href="locales.html">Locales</a></li>
-            <li><a class="item-menu" href="nosotros.html">Nosotros</a></li>
-            <li><a class="item-menu" href="contacto.html">Contacto</a></li>
+            <li><a class="item-menu" href="#">Nosotros</a></li>
+            <li><a class="item-menu" href="#">Contacto</a></li>
         </ul>
     </nav>
     <main class="main">
@@ -35,8 +35,8 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="locales.html">Locales</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
             <div id="boton-abrir" class="boton-menu-abrir display-none">
@@ -46,23 +46,27 @@
             </div>
         </header>
         <section class="section1">
-            <div class="container-section container-nosotros">
-                <div class="container-texto-nosotros">
-                    <h1>Sobre nosotros</h1>
+            <div class="container-contacto">
+                <h1>Contactanos</h1>
+                <p>Podes dejarnos un mensaje al siguiente correo <a class="correo" href="mailto:hamburgueseriawonder@gmail.com">
+                        hamburgueseriawonder@gmail.com</a> o escribirnos en la siguiente casilla</p>
+                <form class="form-contacto">
                     <p>
-                        Nuestro camino empezó en 2019 con un local en barrio Jardin Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Exercitationem rerum ad, ea blanditiis provident neque deserunt quos tenetur totam
-                        reiciendis veniam ex accusamus, tempora doloribus magnam adipisci rem incidunt aperiam. <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste expedita cupiditate error,
-                        minima sunt commodi quidem hic? Facere quidem consectetur, adipisci perspiciatis nam quis iure
-                        similique deserunt doloribus illum?<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium, tenetur iusto sunt unde
-                        non alias asperiores aliquam iste laborum? Consectetur dolores quam saepe sequi. Quos blanditiis
-                        ipsa doloremque sint.
+                        <label for="nombre">*Nombre:</label>
+                        <input type="text" required id="nombre" name="nombre" placeholder="Escribe tu nombre">
                     </p>
-                </div>
-                <div class="container-img-nosotros">
-                    <img src="img/nosotros.jpg" alt="empleados wonder">
+                    <p>
+                        <label for="correo">*Correo:</label>
+                        <input type="text" required id="correo" name="correo" placeholder="Escribe tu correo">
+                    </p>
+                    <p>
+                        <label for="asunto">Comentario:</label>
+                        <textarea name="asunto" id="asunto" placeholder="Escribe tu comentario"></textarea>
+                    </p>
+                    <input class="boton-enviar" type="submit">
+                </form>
+                <div class="container-img-contacto">
+                    <img src="img/contacto.png" alt="inbox">
                 </div>
             </div>
         </section>
