@@ -8,7 +8,7 @@ const nav = document.getElementById("nav-flotante");
 
 
 botonAbrir.addEventListener("click", function() {
-    nav.classList.remove("display-none")
+    nav.classList.add("active")
 });
 
 botonCerrar.addEventListener("click", function() {
@@ -22,7 +22,7 @@ itemsMenu.forEach(item => {
 });
 
 function cerrarNav() {
-    nav.classList.add("display-none");
+    nav.classList.remove("active");
 }
 
 
